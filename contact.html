@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Dambaruu Learning Made Fun:Home</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta content="Free HTML Templates" name="keywords" />
+  <meta content="Free HTML Templates" name="description" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="./img/icon.png" type="image/x-icon">
+
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Nunito&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
+
+  <!-- Flaticon Font -->
+  <link href="lib/flaticon/font/flaticon.css" rel="stylesheet" />
+
+  <!-- Libraries Stylesheet -->
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+
+  <!-- Customized Bootstrap Stylesheet -->
+  <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Navbar Start -->
+  <div class="container-fluid bg-light position-relative shadow">
+    <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0 px-lg-5">
+      <a href="" class="navbar-brand font-weight-bold text-secondary" style="font-size: 50px">
+        <!-- <i class="flaticon-043-teddy-bear"></i>
+          <span class="text-primary">KidKinder</span> -->
+        <img src="./img/Logo.png" />
+      </a>
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse mar justify-content-between" id="navbarCollapse">
+        <div class="navbar-nav font-weight-bold mx-auto py-0">
+          <a href="index.html" class="nav-item nav-link active">Home</a>
+          <a href="ourapp.html" class="nav-item nav-link">OurApp</a>
+          <a href="carrier.html" class="nav-item nav-link">Career at Dambaruu</a>
+          <a href="contact.html" class="nav-item nav-link">Contact</a>
+        </div>
+
+      </div>
+    </nav>
+  </div>
+  <!-- Navbar End -->
+
+  <!-- Header Start -->
+  <div class="container d-flex align-items-center justify-content-center">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3739.5548649506436!2d85.88828901439715!3d20.401235414280745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a190dfb011b1725%3A0xc417a5a72ee013a5!2sSS%20Associates%20Innovation%20Lab!5e0!3m2!1sen!2sin!4v1642481619612!5m2!1sen!2sin"
+      width="100%" height="400" style="border: 0" allowfullscreen="" loading="lazy"></iframe>
+  </div>
+  <!-- Header End -->
+
+  <!-- Contact Start -->
+  <div class="container-fluid pt-5">
+    <div class="container">
+
+      <h1 class="mb-4" style="font-family: Schoolbell; color:#194792;">Contact Us For Any Query</h1>
+    </div>
+    <div class="row">
+      <div class="col-lg-7 mb-5">
+        <div class="contact-form">
+          <div id="success"></div>
+          <form name="sentMessage" id="contactForm" novalidate="novalidate" method="post" action="">
+            <div class="control-group">
+              <input type="text" class="form-control" name="Name" placeholder="Your Name" required="required"
+                data-validation-required-message="Please enter your name" />
+              <p class="help-block text-danger"></p>
+            </div>
+            <div class="control-group">
+              <input type="email" class="form-control" name="Email" placeholder="Your Email" required="required" />
+              <p class="help-block text-danger"></p>
+            </div>
+            <div class="control-group">
+              <input type="text" class="form-control" name="mobile" placeholder="Enter Mobile Number"
+                required="required" data-validation-required-message="Enter Mobile Number" />
+              <p class="help-block text-danger"></p>
+            </div>
+            <div class="control-group">
+              <textarea class="form-control" rows="6" name="message" placeholder="Message" required="required"
+                data-validation-required-message="Please enter your message"></textarea>
+              <p class="help-block text-danger"></p>
+            </div>
+            <div>
+              <button class="btn btn-primary py-2 px-4" type="submit" id="sendMessageButton">
+                Send Message
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <script>
+        const scriptURL =
+          'https://script.google.com/macros/s/AKfycbxR4k9kLC6dlo3uLVvW6OYVeNDnvZfdsaAMMjpUv4l15HEC65m7Tp5xi9DB2Wx7dPie/exec'
+        const form = document.forms[ 'sentMessage' ]
+        form.addEventListener( 'submit', e => {
+          e.preventDefault()
+          fetch( scriptURL, { method: 'POST', body: new FormData( form ) } )
+            .then( response => alert( "Thank you! We will get back to you soon." ) )
+            .then( () => { window.location.reload(); } )
+            .catch( error => console.error( 'Error!', error.message ) )
+        } )
+
+      </script>
+
+      <div class="col-lg-5 mb-5">
+        <div class="d-flex">
+          <i class="fa fa-map-marker-alt d-inline-flex align-items-center justify-content-center bg-primary text-secondary rounded-circle"
+            style="width: 45px; height: 45px"></i>
+          <div class="pl-3">
+            <h5>Address</h5>
+            <p>Canal Road,NH16,Jaripada,Odisha</p>
+          </div>
+        </div>
+        <div class="d-flex">
+          <i class="fa fa-envelope d-inline-flex align-items-center justify-content-center bg-primary text-secondary rounded-circle"
+            style="width: 45px; height: 45px"></i>
+          <div class="pl-3">
+            <h5>Email</h5>
+            <p>support@dambaruu.com</p>
+          </div>
+        </div>
+        <div class="d-flex">
+          <i class="fa fa-phone-alt d-inline-flex align-items-center justify-content-center bg-primary text-secondary rounded-circle"
+            style="width: 45px; height: 45px"></i>
+          <div class="pl-3">
+            <h5>Phone</h5>
+            <p>+91 7879042915</p>
+          </div>
+        </div>
+        <div class="d-flex">
+          <i class="far fa-clock d-inline-flex align-items-center justify-content-center bg-primary text-secondary rounded-circle"
+            style="width: 45px; height: 45px"></i>
+          <div class="pl-3">
+            <h5>Opening Hours</h5>
+            <strong>Monday - Saturday:</strong>
+            <p class="m-0">08:00 AM - 07:00 PM</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- Contact End -->
+
+  <!-- Footer Start -->
+  <div class="container-fluid bg-secondary text-white mt-5 py-5 px-sm-3 px-md-5">
+    <div class="row pt-5">
+      <div class="col-lg-3 col-md-6 mb-5">
+        <a href="" class="navbar-brand font-weight-bold text-primary m-0 mb-4 p-0"
+          style="font-size: 40px; line-height: 40px">
+          <span class="text-white" style="font-family: Schoolbell">Dambaruu</span>
+        </a>
+        <p>
+          Give your students the best of Early Childhood Care Education
+          curated by a team of expert educators with over 25 years of
+          experience in the field of education. Ensure an all-round
+          development in kids through a mix of interactive videos and fun
+          activities.
+        </p>
+        <div class="d-flex justify-content-start mt-4">
+          <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0" style="width: 38px; height: 38px"
+            href="#"><i class="fab fa-twitter"></i></a>
+          <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0" style="width: 38px; height: 38px"
+            href="https://www.facebook.com/people/SS-Associates-Innovation-Lab-Pvt-Ltd/100063691635108/"><i
+              class="fab fa-facebook-f"></i></a>
+          <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0" style="width: 38px; height: 38px"
+            href="https://www.linkedin.com/company/ssinnolab2016/mycompany/"><i class="fab fa-linkedin-in"></i></a>
+          <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0" style="width: 38px; height: 38px"
+            href="https://www.instagram.com/dambaruu_learning/"><i class="fab fa-instagram"></i></a>
+          <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0" style="width: 38px; height: 38px"
+            href="https://www.youtube.com/c/Dambaruu"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-5">
+        <h3 class="text-primary mb-4" style="font-family: Schoolbell">
+          Get In Touch
+        </h3>
+        <div class="d-flex">
+          <h4 class="fa fa-map-marker-alt text-primary"></h4>
+          <div class="pl-3">
+            <h5 class="text-white">Address</h5>
+            <p>Canal Road,NH16,Jaripada,Odisha</p>
+          </div>
+        </div>
+        <div class="d-flex">
+          <h4 class="fa fa-envelope text-primary"></h4>
+          <div class="pl-3">
+            <h5 class="text-white">Email</h5>
+            <p>support@dambaruu.com</p>
+          </div>
+        </div>
+        <div class="d-flex">
+          <h4 class="fa fa-phone-alt text-primary"></h4>
+          <div class="pl-3">
+            <h5 class="text-white">Phone</h5>
+            <p>+91 7879042915</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-5">
+        <h3 class="text-primary mb-4" style="font-family:Schoolbell ;">Quick Links</h3>
+        <div class="d-flex flex-column justify-content-start">
+          <a class="text-white mb-2" href="./index.html"><i class="fa fa-angle-right mr-2"></i>Home</a>
+
+          <a class="text-white mb-2" href="./carrier.html"><i class="fa fa-angle-right mr-2"></i>Our app</a>
+
+          <a class="text-white" href="./contact.html"><i class="fa fa-angle-right mr-2"></i>Contact Us</a>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid pt-5" style="border-top: 1px solid rgba(23, 162, 184, 0.2)">
+      <footer>
+        <div class="bottom">
+          Copyright
+          <script type="text/javascript">
+            document.write( new Date().getFullYear() );
+          </script>
+          © <b style="color: orange">DAMBARUU</b> . All Rights Reserved.
+        </div>
+      </footer>
+    </div>
+  </div>
+  <!-- Footer End -->
+
+  <!-- Back to Top -->
+  <a href="#" class="btn btn-primary p-3 back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+  <!-- JavaScript Libraries -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/isotope/isotope.pkgd.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+  <!-- Contact Javascript File -->
+  <script src="mail/jqBootstrapValidation.min.js"></script>
+  <script src="mail/contact.js"></script>
+
+  <!-- Template Javascript -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
