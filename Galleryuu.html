@@ -1,0 +1,371 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
+    <title>CodePen - Slide-out Scrolling Gallery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css'>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="./css/gallery.scss">
+    
+
+    <!-- <link rel="stylesheet" href="./css/gallery.scss" /> -->
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header id="header" role="header">
+      <div class="container">
+        <div class="container-fluid bg-light position-relative shadow">
+          <nav
+            class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0 px-lg-5"
+          >
+            <button
+              type="button"
+              class="navbar-toggler"
+              data-toggle="collapse"
+              data-target="#navbarCollapse"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse mar justify-content-between"
+              id="navbarCollapse"
+            >
+              <div
+                class="navbar-nav font-weight-bold mx-auto py-0"
+                style="font-size: large"
+              >
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <a href="ourapp.html" class="nav-item nav-link">OurApp</a>
+                <a href="carrier.html" class="nav-item nav-link">Career at Dambaruu</a >
+                <a href="contact.html" class="nav-item nav-link">Contact</a>
+                <a href="Gallery.html" class="nav-item nav-link">Gallery</a>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <!-- Navbar End -->
+      </div>
+    </header>
+    <!-- Navbar Start -->
+
+    <!-- <main id="main" role="main">
+      <div class="container">
+        <article class="contain-images grid">
+          <figure id="figure1" class="figure">
+            <img src="./img/build1.jpg" alt="Image" class="img" id="img1" />
+
+          </figure>
+
+          <figure id="figure2" class="figure">
+            <img
+              src="./img/build2.jpg"
+              alt="Image"
+              class="img"
+              id="img2"
+            />
+            
+          </figure>
+
+          <figure id="figure3" class="figure">
+            <img
+              src="./img/dir.jpg"
+              alt="Image"
+              class="img"
+              id="img3"
+            />
+           
+          </figure>
+
+          <figure id="figure4" class="figure">
+            <img
+              src="./img/env1.jpg"
+              alt="Image"
+              class="img"
+              id="img4"
+            />
+           
+          </figure>
+
+          <figure id="figure5" class="figure">
+            <img
+              src="./img/env2.jpg"
+              alt="Image"
+              class="img"
+              id="img5"
+            />
+           
+          </figure>
+
+          <figure id="figure6" class="figure">
+            <img
+              src="./img/env3.jpg"
+              alt="Image"
+              class="img"
+              id="img6"
+            />
+           
+          </figure>
+
+          <figure id="figure7" class="figure">
+            <img
+              src="./img/studio2.jpg"
+              alt="Image"
+              class="img"
+              id="img7"
+            />
+           
+          </figure>
+
+          <figure id="figure8" class="figure">
+            <img
+              src="./img/meet1.jpg"
+              alt="Image"
+              class="img"
+              id="img8"
+            />
+            
+          </figure>
+
+          <figure id="figure9" class="figure">
+            <img
+              src="./img/meet2.jpg"
+              alt="Image"
+              class="img"
+              id="img9"
+            />
+          
+          </figure>
+              <figure id="figure9" class="figure">
+            <img
+              src="./img/hr.jpg"
+              alt="Image"
+              class="img"
+              id="img9"
+            />
+           
+          </figure>
+
+              <figure id="figure9" class="figure">
+            <img
+              src="./img/env6.jpg"
+              alt="Image"
+              class="img"
+              id="img9"
+            />
+          
+          </figure>
+              <figure id="figure9" class="figure">
+            <img
+              src="./img/env7.jpg"
+              alt="Image"
+              class="img"
+              id="img9"
+            />
+            
+          </figure>
+              <figure id="figure9" class="figure">
+            <img
+              src="./img/stpi.jpeg"
+              alt="Image"
+              class="img"
+              id="img9"
+            />
+           
+          </figure>
+              <figure id="figure9" class="figure">
+            <img
+              src="./img/ohub.jpeg"
+              alt="Image"
+              class="img"
+              id="img9"
+            />
+            
+          </figure>
+            <figure id="figure9" class="figure">
+            <img
+              src="./img/stuidio1.jpg"
+              alt="Image"
+              class="img"
+              id="img9"
+            />
+          
+          </figure>
+            <figure id="figure9" class="figure">
+            <img
+              src="./img/env5.jpg"
+              alt="Image"
+              class="img"
+              id="img9"
+            />
+          </figure>
+           
+          <figure id="figure9" class="figure">
+            <img
+              src="./img/dmb1.jpg"
+              alt="Image"
+              class="img"
+              id="img9"
+            />
+          </figure>
+          <figure id="figure9" class="figure">
+            <img
+              src="./img/dmb2.jpg"
+              alt="Image"
+              class="img"
+              id="img9"
+            />
+          </figure>
+          <figure id="figure9" class="figure">
+            <img
+              src="./img/dmb3.jpg"
+              alt="Image"
+              class="img"
+              id="img9"
+            />
+          </figure>
+          <figure id="figure9" class="figure">
+            <img
+              src="./img/dmb4.jpg"
+              alt="Image"
+              class="img"
+              id="img9"
+            />
+          </figure>
+
+          <figure id="figure9" class="figure">
+            <img
+              src="./img/dmb5.jpg"
+              alt="Image"
+              class="img"
+              id="img9"
+            />
+          </figure>
+
+          <figure id="figure9" class="figure">
+            <img
+              src="./img/dmb6.jpg"
+              alt="Image"
+              class="img"
+              id="img9"
+            />
+          </figure>
+        </article>
+      </div>
+    </main> -->
+
+    <div class="header" id="top">
+      <h1>Scroll Down</h1>
+      <i class="fa fa-angle-down animated bounce"></i>
+   </div>
+   
+   <div class="section animate">
+      <div class="middle">
+         <img src="./img/build1.jpg" />
+      </div>
+      <div class="left title">
+         <div class="content">
+            <h2>A glorious nature shot.</h2>
+            <p>Wow. What a wonderful image. And look! there are even more images on the right side. Amazing. If you click below, I bet you'll get teleported to a magical land.</p>
+            <a href="#" class="btn-primary">Learn more</a>
+         </div>
+      </div>
+      <div class="right tiles">
+         <img src="./img/build2.jpg" />
+         <img src="https://images.unsplash.com/photo-1460400408855-36abd76648b9?dpr=2&auto=format&crop=entropy&fit=crop&w=250&h=250&q=80" />
+         <img src="https://images.unsplash.com/photo-1460400408855-36abd76648b9?dpr=2&auto=format&crop=entropy&fit=crop&w=250&h=250&q=80" />
+         <img src="https://images.unsplash.com/photo-1460400408855-36abd76648b9?dpr=2&auto=format&crop=entropy&fit=crop&w=250&h=250&q=80" />
+      </div>
+   </div>
+   
+   <div class="section">
+      <div class="middle">
+         <img src="https://images.unsplash.com/photo-1464655646192-3cb2ace7a67e?dpr=2&auto=format&crop=entropy&fit=crop&w=250&h=250&q=80" />
+      </div>
+      <div class="right title">
+         <div class="content">
+            <h2>Check out this guy.</h2>
+            <p>What an interesting looking person! I wonder if they've ever climbed Mount Everest, or seen the Egyptian Pyramids. If not, I hope that one day they get to. You go random stock image person! Follow your dreams!</p>
+         </div>
+      </div>
+      
+      <div class="left tiles">
+         <img src="https://images.unsplash.com/photo-1464655646192-3cb2ace7a67e?dpr=2&auto=format&crop=entropy&fit=crop&w=250&h=250&q=80" />
+         <img src="https://images.unsplash.com/photo-1464655646192-3cb2ace7a67e?dpr=2&auto=format&crop=entropy&fit=crop&w=250&h=250&q=80" />
+         <img src="https://images.unsplash.com/photo-1464655646192-3cb2ace7a67e?dpr=2&auto=format&crop=entropy&fit=crop&w=250&h=250&q=80" />
+         <img src="https://images.unsplash.com/photo-1464655646192-3cb2ace7a67e?dpr=2&auto=format&crop=entropy&fit=crop&w=250&h=250&q=80" />
+      </div>
+      
+   </div>
+   
+   <div class="section">
+      <div class="middle">
+         <img src="https://images.unsplash.com/photo-1465326117523-6450112b60b2?dpr=2&auto=format&crop=entropy&fit=crop&w=250&h=250&q=80" />
+      </div>
+      <div class="left title">
+         <div class="content">
+            <h2>That is one pretty building.</h2>
+            <p>I once thought about becoming an architect. I wanted to create a house fit for a king. But then I failed maths. So I became a frontend developer instead.</p>
+         </div>
+      </div>
+      
+      <div class="right tiles">
+         <img src="https://images.unsplash.com/photo-1465326117523-6450112b60b2?dpr=2&auto=format&crop=entropy&fit=crop&w=250&h=250&q=80" />
+         <img src="https://images.unsplash.com/photo-1465326117523-6450112b60b2?dpr=2&auto=format&crop=entropy&fit=crop&w=250&h=250&q=80" />
+         <img src="https://images.unsplash.com/photo-1465326117523-6450112b60b2?dpr=2&auto=format&crop=entropy&fit=crop&w=250&h=250&q=80" />
+         <img src="https://images.unsplash.com/photo-1465326117523-6450112b60b2?dpr=2&auto=format&crop=entropy&fit=crop&w=250&h=250&q=80" />
+      </div>
+      
+   </div>
+   
+   <div class="section">
+      <div class="middle">
+         <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?dpr=2&auto=format&crop=entropy&fit=crop&w=250&h=250&q=80" />
+      </div>
+      <div class="right title">
+         <div class="content">
+            <h2>The future is now.</h2>
+            <p>Check out that technology! Imagine if we went back in time and put one of those in the hands of a neanderthal. Do you think they'd be impressed, or just try to club us to death?</p>
+         </div>
+      </div>
+      
+      <div class="left tiles">
+         <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?dpr=2&auto=format&crop=entropy&fit=crop&w=250&h=250&q=80" />
+         <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?dpr=2&auto=format&crop=entropy&fit=crop&w=250&h=250&q=80" />
+         <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?dpr=2&auto=format&crop=entropy&fit=crop&w=250&h=250&q=80" />
+         <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?dpr=2&auto=format&crop=entropy&fit=crop&w=250&h=250&q=80" />
+      </div>
+      
+   </div>
+   
+   <div class="footer">
+      <a href="#top" class="scrollTo"><i class="fa fa-angle-up animated bounce"></i></a>
+      <h1>Scroll Up</h1>
+   </div>
+
+
+   <!-- JavaScript Libraries -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/isotope/isotope.pkgd.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+  <!-- Contact Javascript File -->
+  <script src="mail/jqBootstrapValidation.min.js"></script>
+  <script src="mail/contact.js"></script>
+
+
+    <!-- Template Javascript -->
+    <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="js/main.js"></script>
+  </body>
+ 
+</html>
